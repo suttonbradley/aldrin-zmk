@@ -1,4 +1,4 @@
-#include "caldera.dtsi"
+#include "aldrin.dtsi"
 
 // Mapped from nice!nano pins P017, P020, P022, P024, P100, P008, P006
 // Pin mappings at https://youtu.be/7UXsD7nSfDY?si=QbZC2xl05s6fYf3I&t=1151
