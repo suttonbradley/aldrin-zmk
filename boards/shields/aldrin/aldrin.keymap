@@ -31,7 +31,7 @@
 // |     |     |     |  (  |  )  |     |                                   |     |     |  ↑  |     |     |     |
 // |     |     |     |  [  |  ]  |     |                                   |     |  ←  |  ↓  |  →  |     |     |
 // |     |     |     |  {  |  }  |     |                                   |     |     |     |     |     |     |
-// |     |     |     |     |     |        |     |     |     |     |     |        |     |     |     |     |     |
+// |     |     |     |     |     |        |     |     |-----|     |     |        |     |     |     |     |     |
                         bindings = <
     &trans  &trans  &trans  &kp LPAR  &kp RPAR  &trans                                      &trans    &trans    &kp UP    &trans     &trans   &trans
     &trans  &trans  &trans  &kp LBRC  &kp RBRC  &trans                                      &kp HOME  &kp LEFT  &kp DOWN  &kp RIGHT  &kp END  &trans
@@ -45,7 +45,7 @@
 // |     |     |     |     |     |     |                                   |     |VOL ↓|MUTE |VOL ↑|     |     |
 // |     |     |     |     |JARVS|     |                                   |     |VD L |     |VD R |     |     |
 // |     |     |     |     |     |     |                                   |     |PREV |PLAY |NEXT |     |     |
-// |     |     |     |     |     |        |     |     |     |     |     |        |     |     |     |     |     |
+// |     |     |     |     |     |        |     |     |-----|     |     |        |     |     |     |     |     |
                         bindings = <
     &trans  &trans  &trans  &trans  &trans        &trans                                      &trans  &kp C_VOL_DN     &kp C_MUTE &kp C_VOL_UP      &trans  &trans
     &trans  &trans  &trans  &trans  &kp LA(SPACE) &trans                                      &trans  &kp LC(LG(LEFT)) &trans     &kp LC(LG(RIGHT)) &trans  &trans
@@ -59,7 +59,7 @@
 // |     |     |     |     |     |     |                                   |     |  `  |  '  |  "  |     |     |
 // |     |     |     |     |     |     |                                   |  ~  |  -  |  =  |  +  |     |     |
 // |     |     |     |     |     |     |                                   |     |  _  |  \  |  /  |     |     |
-// |     |     |     |     |     |        |     |     |     |     |     |        |     |     |     |     |     |
+// |     |     |     |     |     |        |     |     |-----|     |     |        |     |     |     |     |     |
                         bindings = <
     &trans  &trans  &trans  &trans  &trans  &trans                                      &trans    &kp GRAVE &kp SQT   &kp DQT  &trans  &trans
     &trans  &trans  &trans  &trans  &trans  &trans                                      &kp TILDE &kp MINUS &kp EQUAL &kp PLUS &trans  &trans
@@ -73,7 +73,7 @@
 // |     |     |     |     |     |     |                                   |     | N7  | N8  | N9  |     |     |
 // |     |     |     |     |     |     |                                   |     | N4  | N5  | N6  |     |     |
 // |     |     |     |     |     |     |                                   |     | N1  | N2  | N3  |     |     |
-// |     |     |     |     |     |        |     |     |     |     |     |        |  ,  | N0  |  .  |     |     |
+// |     |     |     |     |     |        |     |     |-----|     |     |        |  ,  | N0  |  .  |     |     |
                         bindings = <
     &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &kp N7     &kp N8  &kp N9   &trans  &trans
     &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &kp N4     &kp N5  &kp N6   &trans  &trans
@@ -87,7 +87,7 @@
 // |     |     |     |     |     |     |                                   |     | F7  | F8  | F9  | F10 |     |
 // |     |     |     |     |     |     |                                   |     | F4  | F5  | F6  |     |     |
 // |     |     |     |     |     |     |                                   |     | F1  | F2  | F3  |     |     |
-// |     |     |     |     |     |        |     |     |     |     |     |        | F11 | F12 |NONE |     |     |
+// |     |     |     |     |     |        |     |     |-----|     |     |        | F11 | F12 |NONE |     |     |
                         bindings = <
     &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &kp F7  &kp F8  &kp F9  &kp F10 &trans
     &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &kp F4  &kp F5  &kp F6  &trans  &trans
@@ -95,7 +95,69 @@
     &trans  &trans  &trans  &trans  &trans           &trans  &trans    &trans  &trans           &kp F11 &kp F12 &none   &trans  &trans
                         >;
                 };
+        };
 
 
+// -------------------------------------------------------------------------------------------------------------
+// |  0  |  1  |  2  |  3  |  4  |  5  |                                   |  6  |  7  |  8  |  9  | 10  | 11  |
+// | 12  | 13  | 14  | 15  | 16  | 17  |                                   | 18  | 19  | 20  | 21  | 22  | 23  |
+// | 24  | 25  | 26  | 27  | 28  | 29  |                                   | 30  | 31  | 32  | 33  | 34  | 35  |
+// | 36  | 37  | 38  | 39  | 40  |        | 41  | 42  |-----| 43  | 44  |        | 45  | 46  | 47  | 48  | 49  |
+        combos {
+                compatible = "zmk,combos";
+                // ----- COPY/PASTE -----
+                combo_copy {
+                        timeout-ms = <50>;
+                        key-positions = <27 28>;
+                        bindings = <&kp LC(C)>;
+                };
+                combo_shift_copy {
+                        timeout-ms = <50>;
+                        key-positions = <26 27 28>;
+                        bindings = <&kp LS(LC(C))>;
+                };
+                combo_paste {
+                        timeout-ms = <50>;
+                        key-positions = <27 29>;
+                        bindings = <&kp LC(V)>;
+                };
+                combo_shift_paste {
+                        timeout-ms = <50>;
+                        key-positions = <26 27 29>;
+                        bindings = <&kp LS(LC(V))>;
+                };
+
+                // ----- BLUETOOTH PROFILES -----
+                combo_bt_0 {
+                        timeout-ms = <50>;
+                        key-positions = <0 1>;
+                        bindings = <&bt BT_SEL 0>;
+                };
+                combo_bt_1 {
+                        timeout-ms = <50>;
+                        key-positions = <0 2>;
+                        bindings = <&bt BT_SEL 1>;
+                };
+                combo_bt_2 {
+                        timeout-ms = <50>;
+                        key-positions = <0 3>;
+                        bindings = <&bt BT_SEL 2>;
+                };
+                combo_bt_3 {
+                        timeout-ms = <50>;
+                        key-positions = <0 4>;
+                        bindings = <&bt BT_SEL 3>;
+                };
+                combo_bt_4 {
+                        timeout-ms = <50>;
+                        key-positions = <0 5>;
+                        bindings = <&bt BT_SEL 4>;
+                };
+                // ----- BLUETOOTH CLEAR -----
+                combo_bt_clr {
+                        timeout-ms = <50>;
+                        key-positions = <0 11>;
+                        bindings = <&bt BT_CLR>;
+                };
         };
 };
