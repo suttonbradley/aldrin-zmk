@@ -22,7 +22,7 @@
     &kp TAB     &kp Q       &kp W       &kp E     &kp R    &kp T                                             &kp Y    &kp U    &kp I        &kp O      &kp P        &kp BSLH
     &kp LSHFT   &kp A       &kp S       &lt 2 D   &lt 3 F  &kp G                                             &kp H    &kp J    &kp K        &kp L      &kp SEMI     &kp SQT
     &kp LCTRL   &kp Z       &kp X       &kp C     &kp V    &kp B                                             &kp N    &kp M    &kp COMMA    &kp DOT    &kp FSLH     &mt LA(TAB) LA(LC(TAB))
-    &kp ESC     &kp LGUI    &kp LALT    &none     &mo 4            &kp BSPC  &kp DEL    &kp RET  &kp SPACE            &mo 1    &caps_word   &sl 5      &none        &bt BT_CLR_ALL
+    &kp ESC     &kp LGUI    &kp LALT    &none     &mo 4            &kp BSPC  &kp DEL    &kp RET  &kp SPACE            &mo 1    &caps_word   &sl 5      &none        &none
                         >;
                 };
 
