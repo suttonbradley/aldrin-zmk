@@ -108,22 +108,22 @@
                 // ----- COPY/PASTE -----
                 combo_copy {
                         timeout-ms = <50>;
-                        key-positions = <27 28>;
+                        key-positions = <26 27>;
                         bindings = <&kp LC(C)>;
                 };
                 combo_shift_copy {
                         timeout-ms = <50>;
-                        key-positions = <26 27 28>;
+                        key-positions = <25 26 27>;
                         bindings = <&kp LS(LC(C))>;
                 };
                 combo_paste {
                         timeout-ms = <50>;
-                        key-positions = <27 29>;
+                        key-positions = <26 28>;
                         bindings = <&kp LC(V)>;
                 };
                 combo_shift_paste {
                         timeout-ms = <50>;
-                        key-positions = <26 27 29>;
+                        key-positions = <25 26 28>;
                         bindings = <&kp LS(LC(V))>;
                 };
 
