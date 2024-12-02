@@ -180,5 +180,16 @@
                         key-positions = <0 42>;
                         bindings = <&bt BT_CLR_ALL>;
                 };
+                // ----- SOFT OFF -----
+                combo_soft_off_left {
+                        timeout-ms = <50>;
+                        key-positions = <37 38 39 40>;
+                        bindings = <&soft_off>;
+                };
+                combo_soft_off_right {
+                        timeout-ms = <50>;
+                        key-positions = <45 46 47 48>;
+                        bindings = <&soft_off>;
+                };
         };
 };
