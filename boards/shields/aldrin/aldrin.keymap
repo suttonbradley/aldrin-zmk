@@ -10,6 +10,10 @@
 
 #define AS(keycode) &as LS(keycode) keycode     // Autoshift Macro
 
+&lt {
+        flavor = "hold-preferred";
+}
+
 / {
         behaviors {
                 as: auto_shift {
