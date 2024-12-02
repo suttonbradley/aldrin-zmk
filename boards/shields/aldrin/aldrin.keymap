@@ -37,7 +37,7 @@
                         bindings = <
     AS(TAB)    AS(Q)     AS(W)     AS(E)    AS(R)    AS(T)                                           AS(Y)  AS(U)  AS(I)       AS(O)    AS(P)     &kp BSLH
     &kp LSHFT  AS(A)     AS(S)     &lt 2 D  &lt 3 F  AS(G)                                           AS(H)  AS(J)  AS(K)       AS(L)    AS(SEMI)  AS(SQT)
-    &kp LCTRL  AS(Z)     AS(X)     AS(C)    AS(V)    AS(B)                                           AS(N)  AS(M)  AS(COMMA)   AS(DOT)  AS(FSLH)  &mt RA(TAB) RC(RA(TAB))
+    &kp LCTRL  AS(Z)     AS(X)     AS(C)    AS(V)    AS(B)                                           AS(N)  AS(M)  AS(COMMA)   AS(DOT)  AS(FSLH)  &kp RA(TAB)
     &kp ESC    &kp LGUI  &kp LALT  &none    &mo 4           &kp BSPC  &kp DEL    &kp RET  &kp SPACE         &mo 1  &caps_word  &sl 5    &none     &none
                         >;
                 };
