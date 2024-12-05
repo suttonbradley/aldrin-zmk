@@ -35,10 +35,10 @@
 // | CTRL |  Z  |  X  |  C  |  V  |  B  |                                  |  N  |   M  |  ,  |  .  |  /  | ALTTB|
 // |  ESC | WIN | ALT | CAPW| 10K |     | BKSP | | DEL |      | RET | SPAC |     | ARRBR| CAP | FUN | MACR| GAME |
                         bindings = <
-    AS(TAB)    AS(Q)     AS(W)     AS(E)    AS(R)    AS(T)                                           AS(Y)  AS(U)  AS(I)       AS(O)    AS(P)     &kp BSLH
-    &kp LSHFT  AS(A)     AS(S)     &lt 2 D  &lt 3 F  AS(G)                                           AS(H)  AS(J)  AS(K)       AS(L)    AS(SEMI)  AS(SQT)
-    &kp LCTRL  AS(Z)     AS(X)     AS(C)    AS(V)    AS(B)                                           AS(N)  AS(M)  AS(COMMA)   AS(DOT)  AS(FSLH)  &kp RA(TAB)
-    &kp ESC    &kp LGUI  &kp LALT  &none    &mo 4           &kp BSPC  &kp DEL    &kp RET  &kp SPACE         &mo 1  &caps_word  &sl 5    &none     &none
+    AS(TAB)    AS(Q)     AS(W)     AS(E)    AS(R)  AS(T)                                           AS(Y)  AS(U)  AS(I)       AS(O)    AS(P)     &kp BSLH
+    &kp LSHFT  AS(A)     AS(S)     &lt 2 D  &kp F  AS(G)                                           AS(H)  AS(J)  AS(K)       AS(L)    AS(SEMI)  AS(SQT)
+    &kp LCTRL  AS(Z)     AS(X)     AS(C)    AS(V)  AS(B)                                           AS(N)  AS(M)  AS(COMMA)   AS(DOT)  AS(FSLH)  &kp RA(TAB)
+    &kp ESC    &kp LGUI  &kp LALT  &none    &mo 3         &kp BSPC  &kp DEL    &kp RET  &kp SPACE         &mo 1  &caps_word  &sl 4    &none     &none
                         >;
                 };
 
@@ -70,35 +70,21 @@
                         >;
                 };
 
-                symbols {  // 3
-// -------------------------------------------------------------------------------------------------------------
-// |     |     |     |     |     |     |                                   |     |  `  |  '  |  "  |     |     |
-// |     |     |     |     |     |     |                                   |  ~  |  -  |  =  |  +  |     |     |
-// |     |     |     |     |     |     |                                   |     |  _  |  \  |  /  |     |     |
-// |     |     |     |     |     |        |     |     |-----|     |     |        |     |     |     |     |     |
-                        bindings = <
-    &trans  &trans  &trans  &trans  &trans  &trans                                      &trans    &kp GRAVE &kp SQT   &kp DQT  &trans  &trans
-    &trans  &trans  &trans  &trans  &trans  &trans                                      &kp TILDE &kp MINUS &kp EQUAL &kp PLUS &trans  &trans
-    &trans  &trans  &trans  &trans  &trans  &trans                                      &trans    &kp UNDER &kp BSLH  &kp FSLH &trans  &trans
-    &trans  &trans  &trans  &trans  &trans           &trans  &trans    &trans  &trans             &trans    &trans    &trans   &trans  &trans
-                        >;
-                };
-
-                ten_key {  // 4
+                symbols_and_10_key {  // 3
 // -------------------------------------------------------------------------------------------------------------
 // |     |     |     |     |     |     |                                   |     | N7  | N8  | N9  |     |     |
 // |     |     |     |     |     |     |                                   |     | N4  | N5  | N6  |     |     |
 // |     |     |     |     |     |     |                                   |     | N1  | N2  | N3  |     |     |
 // |     |     |     |     |     |        |     |     |-----|     |     |        |  ,  | N0  |  .  |     |     |
                         bindings = <
-    &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  AS(N7)     AS(N8)  AS(N9)   &trans  &trans
-    &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  AS(N4)     AS(N5)  AS(N6)   &trans  &trans
-    &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  AS(N1)     AS(N2)  AS(N3)   &trans  &trans
-    &trans  &trans  &trans  &trans  &trans           &trans  &trans    &trans  &trans           &kp COMMA  &kp N0  &kp DOT  &trans  &trans
+    &trans  &trans  &kp SQT   &kp DQT   &kp GRAVE &trans                                         &trans  AS(N7)     AS(N8)  AS(N9)   &trans  &trans
+    &trans  &trans  &kp MINUS &kp EQUAL &kp PLUS  &kp TILDE                                      &trans  AS(N4)     AS(N5)  AS(N6)   &trans  &trans
+    &trans  &trans  &kp BSLH  &kp FSLH  &kp UNDER &trans                                         &trans  AS(N1)     AS(N2)  AS(N3)   &trans  &trans
+    &trans  &trans  &trans    &trans    &trans                &trans  &trans    &trans  &trans           &kp COMMA  &kp N0  &kp DOT  &trans  &trans
                         >;
                 };
 
-                func_1shot {  // 5
+                func_1shot {  // 4
 // -------------------------------------------------------------------------------------------------------------
 // |     |     |     |     |     |     |                                   |     | F7  | F8  | F9  | F10 |     |
 // |     |     |     |     |     |     |                                   |     | F4  | F5  | F6  |     |     |
