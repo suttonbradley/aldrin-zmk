@@ -162,6 +162,11 @@ TODO:
                         key-positions = <0 5>;
                         bindings = <&bt BT_SEL 4>;
                 };
+                combo_bt_5 {
+                        timeout-ms = <50>;
+                        key-positions = <0 6>;
+                        bindings = <&bt BT_SEL 5>;
+                };
                 // ----- BLUETOOTH CLEAR -----
                 combo_bt_clr {
                         timeout-ms = <50>;
