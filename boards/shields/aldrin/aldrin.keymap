@@ -71,7 +71,7 @@ TODO:
 // |     |     |     |     |     |        |     |     |-----|     |     |        |     |      |     |     |     |
                         bindings = <
     &trans  &trans  &trans  &trans  &trans        &trans                                      &trans  &kp C_VOL_DN     &kp C_MUTE &kp C_VOL_UP      &trans  &trans
-    &trans  &trans  &trans  &trans  &kp LA(SPACE) &trans                                      &trans  &kp LC(LG(LEFT)) &LG(TAB)   &kp LC(LG(RIGHT)) &trans  &trans
+    &trans  &trans  &trans  &trans  &kp LA(SPACE) &trans                                      &trans  &kp LC(LG(LEFT)) &kp LG(TAB)   &kp LC(LG(RIGHT)) &trans  &trans
     &trans  &trans  &trans  &trans  &trans        &trans                                      &trans  &kp C_PREV       &kp C_PP   &kp C_NEXT        &trans  &trans
     &trans  &trans  &trans  &trans  &trans                 &trans  &trans    &trans  &trans           &trans           &trans     &trans            &trans  &trans
                         >;
