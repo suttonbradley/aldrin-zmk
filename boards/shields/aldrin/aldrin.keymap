@@ -45,7 +45,7 @@ TODO:
     AS(TAB)    AS(Q)     AS(W)     AS(E)    AS(R)  AS(T)                                           AS(Y)  AS(U)  AS(I)       AS(O)    AS(P)     &kp BSLH
     &kp LSHFT  AS(A)     AS(S)     &lt 2 D  &kp F  AS(G)                                           AS(H)  AS(J)  AS(K)       AS(L)    AS(SEMI)  AS(SQT)
     &kp LCTRL  AS(Z)     AS(X)     AS(C)    AS(V)  AS(B)                                           AS(N)  AS(M)  AS(COMMA)   AS(DOT)  AS(FSLH)  &kp RA(TAB)
-    &kp ESC    &kp LGUI  &kp LALT  &none    &mo 3         &kp BSPC  &kp DEL    &kp RET  &kp SPACE         &mo 1  &caps_word  &sl 4    &none     &none
+    &kp ESC    &kp LGUI  &kp LALT  AS(X)    &mo 3         &kp BSPC  &kp DEL    &kp RET  &kp SPACE         &mo 1  &caps_word  &sl 4    AS(X)     AS(X)
                         >;
                 };
 
