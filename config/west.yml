@@ -7,7 +7,8 @@ manifest:
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: main
+      # Edit here and .github/workflows/build.yml - more here https://zmk.dev/blog/2025/06/20/pinned-zmk
+      revision: v0.3-branch
       import: app/west.yml
   self:
     path: config

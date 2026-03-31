@@ -2,4 +2,5 @@ on: [push, pull_request, workflow_dispatch]
 
 jobs:
   build:
-    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+    # Edit here and west.yml - more here https://zmk.dev/blog/2025/06/20/pinned-zmk
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@v0.3-branch
